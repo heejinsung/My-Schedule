@@ -10,7 +10,7 @@ header .headerWrap .mIcon span:nth-child(3){width:70%;}
 header .headerWrap h1{font-weight:400; font-size:22px; padding:10px 0;}
 
 /* Container Style */
-.container{width:100%; height:auto; display:grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(5, minmax(100px, auto)); gap:5px;}
+.container{width:100%; height:auto; display:grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(5, minmax(100px, auto)); gap:5px; padding: 20px;}
 .container .item{background:#fff; border:1px solid #ccc;}
 .container .item:nth-child(1){grid-row-start:1; grid-row-end:5; display:flex; align-items:center; justify-content: center; padding:30px 0;}
 .container .item:nth-child(6){ grid-column-start: 1; grid-column-end: 3;}
@@ -32,7 +32,7 @@ canvas {position: absolute;}
 .subPfBar .pfContents h3{font-size: 14px; font-weight: 600;}
 .subPfBar .pfContents p{font-size: 12px; font-weight: 300; margin: 2px 0 5px;}
 .subPfBar .pfContents p b{font-weight: normal;}
-.subPfBar .pfContents .rateNum{font-weight: 300; font-size: 12px; width: 25px; text-align: right; border: 0; }
+.subPfBar .pfContents .rateNum{font-weight: 300; font-size: 12px; width: 25px; text-align: right; border: 0; outline: 0;}
 .subPfBar .pfContents .rateNum:focus{border: 1px solid #bdc9a6;}
 .subPfBar .pfBarBox{padding: 3px 0; border: 1px solid #ccc; border-radius: 10px; background: #eee;}
 .subPfBar .pfBarBox .pfBar{display: block; width: 0; height: 15px; background: #bdc9a6; border-radius:0 10px 10px 0;}
@@ -44,12 +44,22 @@ canvas {position: absolute;}
 .btns button:nth-child(2){margin: 0 5px;}
 
 /* Footer style */
-footer{width: 100%; height: auto; background: #bdc9a6; padding: 15px 0; text-align: center; position: fixed; bottom: 0;}
+footer{width: 100%; height: auto; background: #bdc9a6; padding: 15px 0; text-align: center; _position: fixed; bottom: 0;}
 footer p{color: #fff; font-weight: 400;}
 
 /* Input form Page Style */
-.inputContainer{width:100%; height:auto; display:grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(6, minmax(100px, auto)); gap:5px;}
+.inputContainer{width:100%; height:auto; display:grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(6, minmax(100px, auto)); gap:5px; padding: 20px 0;}
 .inputContainer .item{background:#fff; border:1px solid #ccc;}
 .inputContainer .item:nth-child(1){grid-row-start:1; grid-row-end:5; display:flex; align-items:center; justify-content: center; padding:30px 0;}
 .inputContainer .item:nth-child(6){ grid-column-start: 1; grid-column-end: 3;}
 .inputContainer .item:nth-child(7){ grid-column-start: 1; grid-column-end: 3;}
+
+.inputContainer .subPfBar .pfContents .rateNum:focus{border: 0;}
+
+/* Input Form Style */
+.item.inputBox{padding: 10px;} 
+.item.inputBox .projectCate{width: 30%; height: 40px; padding:5px; border: 1px solid #ccc; border-radius: 0; outline: 0; display: block; float: left; font-family: 'Open Sans';}
+.item.inputBox .projectTit{width: calc(70% - 5px); height: 40px; padding: 5px; border: 1px solid #ccc; display: block; float: right; font-family: 'Noto Sasn KR';}
+.item.inputBox .projectCon{width: 100%; height: 150px; border: 1px solid #ccc; resize: none; padding: 5px; margin-top: 5px; font-family: 'Noto Sasn KR';}
+.item.inputBox .projectTit:focus{border: 1px solid #bdc9a6;}
+.item.inputBox .projectCon:focus{border: 1px solid #bdc9a6;}

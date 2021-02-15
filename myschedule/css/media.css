@@ -14,12 +14,26 @@
    .container .item:nth-child(4),
    .container .item:nth-child(5){grid-column-start: 1; grid-column-end: 3;}
 
+   /* Input form Page Style */
+   .inputContainer{grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(5, minmax(100px, auto)); padding: 20px 0;}
+   .inputContainer .item{grid-column-start: 1; grid-column-end: 3;}
+   .inputContainer .item.subPfBar{display: none;}
+   
+
    /* Button Box style */
    .btns{justify-content: center;}
    .btns button{padding: 5px 20px; font-size: 12px;}
 
    /* Footer Style */
    footer{position: relative;}
+}
+
+@media screen and (max-width:600px){
+   .item.inputBox .projectCate{font-size: 12px; width: 100%;}
+   .item.inputBox .projectTit{font-size: 12px; width: 100%; margin-top: 5px;}
+   .item.inputBox .projectCon{font-size: 12px;}
+
+
 }
 
 @media screen and (max-width:400px){

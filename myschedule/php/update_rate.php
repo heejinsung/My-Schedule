@@ -29,11 +29,11 @@
 
    file_put_contents($_SERVER['DOCUMENT_ROOT'].'/myschedule/data/sch_rate.json', json_encode($arr, JSON_PRETTY_PRINT));
 
-   // echo "
-   //    <script>
-   //       alert('수정이 완료되었습니다!');
-   //       location.href='/myschedule/index.php';
-   //    </script>
-   // ";
+   echo "
+      <script>
+         alert('수정이 완료되었습니다!');
+         location.href='/myschedule/index.php';
+      </script>
+   ";
 
 ?>
