@@ -3,18 +3,9 @@
 </footer>
 
 <script>
-   const rateNum = document.querySelectorAll('.rateNum');
-
-   console.log(rateNum);
-   
-   for (let i =0; i < rateNum.length; i++) {
-      console.log(rateNum[i]);
-   }
-</script>
-<script>
-  const pathname = window.location.pathname;
-  const changeTit = document.querySelector('#title');
-  const rateNum = document.querySelectorAll('.rateNum');
+  let pathname = window.location.pathname;
+  let changeTit = document.querySelector('#title');
+  let rateNum = document.querySelectorAll('.rateNum');
 
   if(pathname.includes('input_form')){
       changeTit.innerHTML = "Schedule Input";
@@ -22,6 +13,11 @@
       for (let i =0; i < rateNum.length; i++){
          rateNum[i].readOnly = true;
       }
-  } 
+  } else if (pathname.includes('sch_view')) {
+      changeTit.innerHTML = "Schedule Borad";
+  } else if (pathname.includes('detail_view')) {
+      changeTit.innerHTML = "Detail Schedule";
+  }
+
 
 </script>

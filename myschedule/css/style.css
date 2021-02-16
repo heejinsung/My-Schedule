@@ -40,7 +40,7 @@ canvas {position: absolute;}
 
 /* button box style */
 .btns{display: flex; align-items: center; justify-content: flex-end; padding: 10px;}
-.btns button{border: 1px solid #bdc9a6; background: #bdc9a6; color: #fff; font-weight: 400; font-family: 'Noto Sans KR'; padding: 10px 30px;}
+.btns button, a.schInput{border: 1px solid #bdc9a6; background: #bdc9a6; color: #fff; font-weight: 400; font-family: 'Noto Sans KR'; padding: 10px 30px;}
 .btns button:nth-child(2){margin: 0 5px;}
 
 /* Footer style */
@@ -63,3 +63,46 @@ footer p{color: #fff; font-weight: 400;}
 .item.inputBox .projectCon{width: 100%; height: 150px; border: 1px solid #ccc; resize: none; padding: 5px; margin-top: 5px; font-family: 'Noto Sasn KR';}
 .item.inputBox .projectTit:focus{border: 1px solid #bdc9a6;}
 .item.inputBox .projectCon:focus{border: 1px solid #bdc9a6;}
+
+/* Schedule Board Page Style */
+.item.boardBox{padding: 10px;} 
+.item.boardBox .boardTable{width: 100%; height: auto;border-bottom: 1px solid #ddd;}
+.item.boardBox .boardTable li:last-child{}
+.item.boardBox .boardTable li:nth-child(odd){background: #eee;}
+
+.item.boardBox .boardTable .boardTitle,
+.item.boardBox .boardTable .boardList{width: 100%; height: auto; display: flex; align-items: center; justify-content: center;}
+.item.boardBox .boardTable li.boardTitle{background: #bdc9a6;}
+.item.boardBox .boardTable .boardTitle span{color: #fff; }
+
+.item.boardBox .boardTable span{text-align: center; font-family: 'Noto Sans KR'; padding: 8px 0; color: #555;}
+.item.boardBox .boardTable span.boNum{width: 10%;}
+.item.boardBox .boardTable span.boCate{width: 20%;}
+.item.boardBox .boardTable span.boTit{width: 50%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.item.boardBox .boardTable span.boReg{width: 20%;}
+
+.loadMore{width: 100%; height: auto; margin-top: 10px; text-align: center;}
+.loadMore button{outline: 0; border: 1px solid #bdc9a6; background: #bdc9a6; padding: 10px 30px; color: #fff; font-family: 'Noto Sans KR';}
+
+.categoryTabs{width: 100%; height: auto;}
+.categoryTabs a{display: inline-block; border: 1px solid #bdc9a6; background: #bdc9a6; font-family: 'Noto Sans KR'; color: #fff; padding: 5px 15px; margin-bottom: 10px; font-weight: 400;}
+.categoryTabs a.active{background: #fff; color: #bdc9a6;}
+
+/* Detail View Page Style */
+.item.viewBox{padding: 10px;}
+.item.viewBox .viewTable{width: 100%; height: auto;border-bottom: 1px solid #ddd;}
+.item.viewBox .viewTable .viewTitle,
+.item.viewBox .viewTable .viewList{width: 100%; height: auto; display: flex; align-items: center; justify-content: center;}
+.item.viewBox .viewTable li.viewTitle{background: #bdc9a6;}
+.item.viewBox .viewTable .viewTitle span{color: #fff; }
+
+.item.viewBox .viewTable span{text-align: center; font-family: 'Noto Sans KR'; padding: 8px 0; color: #555;}
+.item.viewBox .viewTable span.boNum{width: 10%;}
+.item.viewBox .viewTable span.boCate{width: 20%;}
+.item.viewBox .viewTable span.boCon{width: 50%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.item.viewBox .viewTable .viewList span.boCon{ text-align: left;}
+.item.viewBox .viewTable span.boCon em{font-style: normal;}
+.item.viewBox .viewTable span.boReg{width: 20%;}
+
+.item.viewBox .detailTit{width: 100%; height: auot; padding-left: 20px; border-left: 2px solid #bdc9a6; margin-bottom: 10px;}
+.item.viewBox .detailTit h2{font-size: 16px; font-weight: 400; color: #555; font-family: 'Noto Sans KR';}

@@ -49,22 +49,15 @@
                 include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/grid_up.php"; 
                ?>
 
-               <div class="item inputBox">
-                  <form action="/myschedule/php/schedule_input.php" method="post" name="schInputForm">
-                    <select name="projectCate" id="" class="projectCate">
-                      <option value="dbProject">Database Project</option>
-                      <option value="apiProject">API Project</option>
-                      <option value="renewalProject">Renewal Project</option>
-                      <option value="webProject">Web Planning Project</option>
-                    </select>
-                    <input type="text" name="projectTit" class="projectTit" placeholder="진행 상황 일정을 입력해 주세요.">
-                    <textarea name="projectCon" id="" class="projectCon" placeholder="상세 일정을 작성해 주세요."></textarea>
-                  </form>
+               <div class="item boardBox">
+                  <?php 
+                  $include_path=$_GET['key'];
+                  include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/$include_path.php"; 
+                  ?>
                </div>
 
                <div class="item btns">
-                  <button type="button" onclick="schInput()">진행 상황 작성</button>
-                  <button type="button" onclick="javascript:location.href='/myschedule/pages/sch_view.php?key=view_all'">진행 상황 확인</button>
+                  <a href="/myschedule/pages/input_form.php" class="schInput">진행 상황 작성</a>
                </div>   
                
             </div>
@@ -85,22 +78,13 @@
   <script src="/myschedule/js/custom.js"></script>
   <script src="/myschedule/js/total_avg.js"></script>
   <script>
-  function schInput(){
-    if(!document.schInputForm.projectTit.value){
-      alert('일정을 입력해 주세요.');
-      document.schInputForm.projectTit.focus();
-      return;
-    }
+     $(".boardList").hide();
+     $(".boardList").slice(0,5).show();
 
-    if(!document.schInputForm.projectCon.value){
-      alert('일정 내용을 입력해 주세요.');
-      document.schInputForm.projectCon.focus();
-      return;
-    }
-
-    document.schInputForm.submit();
-  }
-</script>
+     $(".loadMore button").click(function(){
+        $(".boardList:hidden").slice(0,5).show();
+     });
+  </script>
 
 </body>
 
