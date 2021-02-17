@@ -22,7 +22,8 @@
 
    /* Button Box style */
    .btns{justify-content: center;}
-   .btns button, .btns a{padding: 5px 20px; font-size: 12px;}
+   .btns button, .btns a, .loadMore button, .subBtn button{padding: 5px 20px; font-size: 12px;}
+
 
    /* Footer Style */
    footer{position: relative;}
@@ -41,6 +42,8 @@
 
    /* Schedule Board Style */
    .item.boardBox .boardTable span.boNum{display: none;}
+   .item.boardBox .boardTable span.boCate{display: none;}
+   .item.boardBox .boardTable span.boCon{width: 70%;}
    .item.boardBox .boardTable span.boReg{width: 30%;}
 
    .categoryTabs{text-align: center;}
@@ -50,6 +53,10 @@
    .item.viewBox .viewTable span.boReg{width: 30%;} 
 
    .item.viewBox .detailTit h2{font-size: 14px;}
+
+   /* hidden input style */
+   .hiddenTit{width: 100%; font-size: 12px;}
+   .hiddenCon{width: 100%; font-size: 12px;}  
 }
 
 @media screen and (max-width:400px){
@@ -75,6 +82,6 @@
 
    /* Detail View Page Style */
    .item.viewBox .viewTable span.boCate{display: none;}
-   .item.viewBox .viewTable span.boCon{width: 60%;}
-   .item.viewBox .viewTable span.boReg{width: 40%;} 
+   .item.viewBox .viewTable span.boCon{width: 70%;}
+   .item.viewBox .viewTable span.boReg{width: 30%;} 
 }

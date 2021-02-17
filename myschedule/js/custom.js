@@ -17,7 +17,19 @@ $(function(){
       }
    });
 
-
+   //hidden input show and hide
+   $(".updateConBtn").click(function(){
+      $(this).toggleClass("on");
+      if($(this).hasClass("on")){
+         $(this).text("상황 수정 취소");
+         $(".hiddenTit, .hiddenCon, .subBtn").show();
+         $(".detailTit h2, .boCon em").hide();
+      } else {
+         $(this).text("진행 상황 수정");
+         $(".detailTit h2, .boCon em").show();
+         $(".hiddenTit, .hiddenCon, .subBtn").hide();
+      }
+   })
 
 
 });
