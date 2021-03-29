@@ -3,8 +3,7 @@
 
 <img src="https://user-images.githubusercontent.com/77706805/112795411-6b591000-90a3-11eb-8e7d-e5beefa34a37.gif" width="80%" height="500">
 
-> http://shj6837.dothome.co.kr/myschedule
-
+> [myschedule 사이트](http://shj6837.dothome.co.kr/myschedule)
 ----
 
 ## Features
